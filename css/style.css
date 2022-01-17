@@ -86,7 +86,7 @@ header .banner {
   }
   
   .subnav .subnavbtn {
-    font-size: 16px;  
+    font-size: 25px;  
     border: none;
     outline: none;
     color: white;
@@ -123,7 +123,7 @@ header .banner {
   .subnav:hover .subnav-content {
     display: block;
   }
-
+  
   
   .navbar a{
     font-size: 25px; 
