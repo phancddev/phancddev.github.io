@@ -123,7 +123,9 @@ header .banner {
   .subnav:hover .subnav-content {
     display: block;
   }
-  
+  button {
+    font-size: 25px;
+  }
   
   .navbar a{
     font-size: 25px; 
