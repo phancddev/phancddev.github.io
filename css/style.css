@@ -37,7 +37,10 @@ h6 {
 p {
     font-size: 1em;
 }
-.banner {
+header {
+  height: 350px;
+}
+header .banner {
     width: 100%;
     height: 300px;
     text-align: center;
