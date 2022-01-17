@@ -125,7 +125,9 @@ header .banner {
   }
 
   
-
+  .navbar a{
+    font-size: 20px;
+  }
 main {
     padding-left: 10%;
 }
