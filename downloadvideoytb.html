@@ -14,6 +14,15 @@
             <div class="card-header bg-info">
                 <h5>Download video youtube free -Phancd</h5>
             </div>
+
+            <script>
+                alert('Dán link và tải video nhé!')
+                var name;
+                name = prompt("What is your name?")
+                document.write("Bạn")
+                document.write(name)
+                document.write("hãy dán link và tải video mà bạn mong muốn nhé!")
+            </script>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">
@@ -64,6 +73,25 @@
 
     function downloadVideo(link, fromate) {
         $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url=' + link + '&f=' + fromate + '"></iframe>');
+    }
+</script>
+<div id="CounterVisitor">
+</div>
+
+<script>
+    var n = localStorage.getItem('on_load_counter');
+
+    if (n === null) {
+        n = 0;
+    }
+    n++;
+
+    localStorage.setItem("on_load_counter", n);
+
+    nums = n.toString().split('').map(Number);
+    document.getElementById('CounterVisitor').innerHTML = '';
+    for (var i of nums) {
+        document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
     }
 </script>
 
