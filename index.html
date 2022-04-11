@@ -10,9 +10,8 @@
 </head>
 
 <body>
-    <script>
-        alert("Chào mừng bạn đã đến với web!!");
-    </script>
+
+
     <header>
         <div class="banner" style="background-image: url('images/banner.png');">
             <img src="images/banner.png" style="visibility: hidden; width: 100%; height:190px" />
@@ -38,7 +37,7 @@
         </div>
     </header>
     <main>
-
+        <h2 id="chaoNguoiXem"></h2>
         <p>05/Jan</p>
         <div>
             <h2>Classic Yellow Cake with chocolate frosting</h2>
@@ -69,6 +68,21 @@
     <hr>
 
     <footer>&copy; 2023 by Chi's Cake</footer>
+    <script>
+        alert("Chào mừng bạn đã đến với web!!");
+        var chaoHoi = document.getElementById('chaoNguoiXem');
+        var hoiTen = prompt('Tên của bạn là gì?');
+        if (hoiTen.length != 0) {
+            chaoHoi.innerHTML = 'Chào bạn' + ' ' + hoiTen + ',' + ' ' + ', bạn hãy chọn loại bánh mà mình thích nhé'
+        }
+
+
+        // function chaoNguoiDangXem() {
+        //     let hoiTen = prompt('Tên của bạn là gì?');
+        //    chaoHoi.innerHTML = 'Chào bạn' + ' ' + hoiTen + ',' + ' ' + ', bạn hãy chọn loại bánh mà mình thích nhé'
+        // }
+        chaoNguoiDangXem();
+    </script>
 </body>
 
 </html>

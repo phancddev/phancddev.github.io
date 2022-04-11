@@ -1,0 +1,51 @@
+<style>
+    .toggle {
+        --w: 100px;
+        --h: 50px;
+        --p: 5px;
+        --bg: #333741;
+        --bg-active: #f62682;
+        --bg-spinner: white;
+        display: inline-block;
+        width: var(--w);
+        height: var(--h);
+    }
+    
+    .toggle-main {
+        width: 100%;
+        height: 100%;
+        border-radius: 100rem;
+        background-color: var(--bg);
+        cursor: pointer;
+        padding: var(--p);
+        transition: all 0.2s linear;
+    }
+    
+    .toggle-spinner {
+        --size: calc(var(--h) - var(--p) * 2);
+        width: var(--size);
+        height: var(--size);
+        background-color: var(--bg-spinner);
+        border-radius: 100rem;
+        transition: all 0.2s linear;
+    }
+    
+    .toggle-input:checked+.toggle-main {
+        background-color: var(--bg-active);
+    }
+    
+    .toggle-input:checked+.toggle-main>.toggle-spinner {
+        transform: translate(calc(var(--w) - var(--p) * 2 - var(--size)), 0);
+    }
+</style>
+<label class="toggle" for="toggle">
+  <input
+    id="toggle"
+    type="checkbox"
+    class="toggle-input"
+    style="display: none"
+  />
+  <div class="toggle-main">
+    <div class="toggle-spinner"></div>
+  </div>
+</label>
