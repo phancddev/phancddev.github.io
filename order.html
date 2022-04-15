@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi's Cake Blog - Other</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="css/order.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="banner" style="background-image: url('images/banner.png');">
+            <img src="images/banner.png" style="visibility: hidden; width: 100%; height:190px" />
+            <div>
+                <h1>Chi's Cake</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="subnav">
+                <button class="subnavbtn">Product <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="details-1.html">Classic yellow cake</a>
+                    <a href="details-2.html">Coconut Bundt Cake</a>
+                    <a href="details-3.html">Cream Cheese Pound Cake</a>
+                    <a href="details-4.html">German Chocolate Cake</a>
+                </div>
+            </div>
+            <div class="navbar">
+                <a href="about.html">About</a>
+
+                <div class="navbar">
+                    <a href="order.html">Order</a>
+
+                    <div class="navbar">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <main class="container">
+        <div>
+            <label for="caketype">Cake name: </label>
+            <div>
+                <select id="caketype">
+                    <option value="default">--- Select cake ---</option>
+                    <option value="classic">Classic Yellow Cake</option>
+                    <option value="coconut">Coconut Bundt Cake</option>
+                    <option value="cream">Cream Cheese Pound Cake</option>
+                    <option value="germam">German Chocolate Cake</option>
+                </select>
+                <div id="div_error_caketype" class="check"></div>
+            </div>
+
+            <div>
+                <label for="name">Your name</label>
+                <input type="text" id="name" placeholder="Your name..">
+                <div id="div_error_name" class="check"></div>
+            </div>
+
+            <div>
+                <label for="message">Your message</label>
+                <input type="text" id="message" placeholder="The message write to cake..">
+                <div id="div_error_message" class="check"></div>
+            </div>
+
+            <div>
+                <label for="">Include</label> <br>
+                <input type="checkbox" id="candle"> Candle <br>
+                <input type="checkbox" id="firework"> Firework <br>
+                <input type="checkbox" id="toy"> Toys <br>
+            </div>
+
+
+            <div>
+                <label for="time">Deliver time:</label> <br>
+                <input type="date" id="time" name="time"> <br>
+                <div id="div_error_time" class="check"></div>
+            </div>
+
+            <div>
+                <label>Call before deliver:</label> <br>
+                <input type="radio" id="call" name="checkCall"> Yes
+                <input type="radio" id="notcall" name="checkCall"> No
+                <div id="div_error_call" class="check"></div>
+            </div>
+
+            <div>
+                <label for="to">Deliver to</label>
+                <textarea id="to" name="to" placeholder="Deliver to.." style="height:200px"></textarea>
+                <div id="div_error_to" class="check"></div>
+            </div>
+
+
+            <button onClick="send_Form()">Order now</button>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 by Chi's cake</p>
+    </footer>
+
+    <script src="js/order.js"></script>
+</body>
+
+</html>
